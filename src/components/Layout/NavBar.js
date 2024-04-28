@@ -1,5 +1,9 @@
 import React from 'react'
 
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { NavLink, useNavigate } from "react-router-dom";
+
 
 const NavBar = () => {
   return (
@@ -17,9 +21,22 @@ const NavBar = () => {
           <li class="nav-item">
             <a class="nav-link" href="#">Jobs</a>
           </li>
-          <li class="nav-item">
+          <Row className="nav-links">
+          <Col>
+            <NavLink  to="/students" className="nav-link">
+              Login
+            </NavLink>
+          </Col>
+          <Col>
+            <NavLink to="/pairs" className="nav-link">
+              SignUp
+            </NavLink>
+          </Col>
+          </Row>
+          
+          {/* <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
-          </li>
+          </li> */}
           
         </ul>
       </div>

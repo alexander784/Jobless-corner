@@ -7,7 +7,7 @@ const Home = () => {
       <div className='welcome'>
 
       
-        <h2>Crabs Jobs</h2>
+        {/* <h2>Crabs Jobs</h2> */}
 
         <p className='mx-auto' style={{maxWidth:"600px"}}>
 
