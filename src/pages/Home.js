@@ -1,19 +1,33 @@
 import React from 'react'
 import "../App.css";
+import { Link } from 'react-router-dom';
+import Search from '../components/Layout/Search';
 
 const Home = () => {
   return (
     <div className='welcome-container'>
       <div className='welcome'>
+    <Search />
+
 
       
-        {/* <h2>Crabs Jobs</h2> */}
 
         <p className='mx-auto' style={{maxWidth:"600px"}}>
 
         Looking for your next career adventure? You're in the right place! Crab Jobs is your one-stop destination for discovering exciting job
          opportunities tailored just for you
          </p>
+         <div className='roles'>
+         <Link to="/open-roles">
+          <button className='btn'>open Role</button>
+         </Link>
+         <Link to="/post-roles">
+          <button className='btn'>Post Role</button>
+         </Link>
+         </div>
+
+         
+         
 
          </div>
 
