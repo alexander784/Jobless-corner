@@ -19,10 +19,10 @@ const Home = () => {
          </p>
          <div className='roles'>
          <Link to="/open-roles">
-          <button className='btn'>open Role</button>
+          <button className='button'>open Role</button>
          </Link>
          <Link to="/post-roles">
-          <button className='btn'>Post Role</button>
+          <button className='button'>Post Role</button>
          </Link>
          </div>
 
