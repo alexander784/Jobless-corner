@@ -66,7 +66,7 @@ const Home = () => {
     </div>
 
     
-          {/* <FOoter/> */}
+          {/* <Footer/> */}
     </div>
 
 
