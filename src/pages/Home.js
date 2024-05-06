@@ -7,19 +7,16 @@ const Home = () => {
   return (
     <div className='welcome-container'>
       <div className='welcome'>
-    <Search />
-
-
-      
-
-        <p className='mx-auto' style={{maxWidth:"600px"}}>
+        <p className=''>
 
         Looking for your next career adventure? You're in the right place! Crab Jobs is your one-stop destination for discovering exciting job
          opportunities tailored just for you
          </p>
+         <Search />
+         
          <div className='roles'>
          <Link to="/open-roles">
-          <button className='button'>open Role</button>
+          <button className=''>open Role</button>
          </Link>
          <Link to="/post-roles">
           <button className='button'>Post Role</button>
