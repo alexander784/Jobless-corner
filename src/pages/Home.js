@@ -1,17 +1,21 @@
 import React from 'react'
-import "../App.css";
+// import "../App.css";
 import { Link } from 'react-router-dom';
 import Search from '../components/Layout/Search';
+import News from "../assets/News.jpg";
+import Smart from "../assets/Smart.avif";
+import sync from "../assets/sync.png";
 
 const Home = () => {
   return (
-    <div className='welcome-container'>
-      <div className='welcome'>
-        <p className=''>
-
+    <div className=''>
+      <div className='bg-gray-400 flex justify-center items-center h-screen'>
+        <div className='info bg-gray-200 p-8 rounded-lg text-center'>
+        <p className='text-gray-800'>
         Looking for your next career adventure? You're in the right place! Crab Jobs is your one-stop destination for discovering exciting job
          opportunities tailored just for you
          </p>
+         </div>
          <Search />
          
          <div className='roles'>
@@ -22,48 +26,47 @@ const Home = () => {
           <button className='button'>Post Role</button>
          </Link>
          </div>
-
-         
-         
-
          </div>
+         <section class="container mx-auto px-6 p-10">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+        Features
+      </h2>
+      <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+          <h4 class="text-3xl text-gray-800 font-bold mb-3">Exercise Metric</h4>
+          <p class="text-gray-600 mb-8">Our Smart Health Monitoring Wristwatch is able to capture you vitals while you exercise. You can create different category of exercises and can track your vitals on the go.</p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src={Smart} height={350} alt="Monitoring" />
+        </div>
+      </div>
+
+      <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+        </div>
+        <div class="w-full md:w-1/2 pl-10">
+          <h4 class="text-3xl text-gray-800 font-bold mb-3">Reporting</h4>
+          <p class="text-gray-600 mb-8">Our Smart Health Monitoring Wristwatch can generate a comprehensive report on your vitals depending on your settings either daily, weekly, monthly, quarterly or yearly.</p>
+          <img src={News} height={350} width={350}alt="Reporting" />
+
+        </div>
+      </div>
+
+      <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+          <h4 class="text-3xl text-gray-800 font-bold mb-3">Syncing</h4>
+          <p class="text-gray-600 mb-8">Our Smart Health Monitoring Wristwatch allows you to sync data across all your mobile devices whether iOS, Android or Windows OS and also to your laptop whether MacOS, GNU/Linux or Windows OS.</p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src={sync} alt="Syncing" />
+        </div>
+      </div>
+    </section>
 
 
- <div className="benefits-features">
-  <div className='services'>
-          <h3>Our Services</h3>
-          <p>
-          Create your profile and let data handle the rest
-          <br/>
-          We use advanced machine learning algorithms to match you and your future employer. Reduce the time spent on evaluating your potential and let us do it for you.
 
-
-          </p>
-          </div>
-          <div className="ben-feat">
-            <div className="work">
-              <h5>HOw we Work </h5>
-              <p>
-              We have five simple steps to get you into you dream job, discover the process and be proud of the process.
-
-              </p>
-              <div className='how-work'>
-                <p>
-                We have five simple steps to get you into you dream job, discover the process and be proud of the process.
-
-                </p>
-
-              </div>
-              <div className="feat">
-              <h5>Features: </h5>
-              <p>
-                Add a Job
-              </p>
-            </div>
-            </div>
-            
-          </div>
-    </div>
+ 
+             
 
     
           {/* <Footer/> */}
