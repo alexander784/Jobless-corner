@@ -3,15 +3,35 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className='navbar bg-gray-800 text-black p-4'>
-      <Link to="/" className='logo text-black'>
-        Lexa
-      </Link>
-      <div className='space-x-4'>
-        <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>Home</Link>
-        <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>Interviews</Link>
+    <nav className="bg-gray-800 py-4">
+      <div className="container mx-auto flex justify-between items-center rounded-lg">
+        <div className="text-white font-bold text-xl">
+          <Link to="/">My App</Link>
+        </div>
+        <ul className="flex space-x-4 text-white">
+          <li>
+            <Link to="/" className="hover:text-gray-400">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-gray-400">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" className="hover:text-gray-400">
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-gray-400">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

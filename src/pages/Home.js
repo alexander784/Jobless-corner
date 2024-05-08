@@ -8,7 +8,7 @@ import sync from "../assets/sync.png";
 
 const Home = () => {
   return (
-    <div className=''>
+    <div className='size-100 bg-gray-800'>
       <div className='bg-gray-400 flex justify-center items-center h-screen'>
         <div className='info bg-gray-200 p-8 rounded-lg text-center'>
         <p className='text-gray-800'>
