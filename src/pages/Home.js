@@ -9,8 +9,8 @@ import sync from "../assets/sync.png";
 const Home = () => {
   return (
     <div className='size-100 bg-gray-800'>
-      <div className='bg-gray-400 flex justify-center items-center h-screen'>
-        <div className='info bg-gray-200 p-8 rounded-lg text-center'>
+      <div className='flex justify-center items-center h-screen'>
+        <div className='absolute top- bg-gray-200 p-5 rounded-lg text-center'>
         <p className='text-gray-800'>
         Looking for your next career adventure? You're in the right place! Crab Jobs is your one-stop destination for discovering exciting job
          opportunities tailored just for you
@@ -18,11 +18,11 @@ const Home = () => {
          </div>
          <Search />
          
-         <div className='roles'>
-         <Link to="/open-roles">
+         <div className='absolute bottom-0'>
+         <Link to="/open-roles" className='container mx-5 rounded-3xl bg-slate-600 hover:bg-orange-950'>
           <button className=''>open Role</button>
          </Link>
-         <Link to="/post-roles">
+         <Link to="/post-roles" className='container mx-5 rounded-3xl bg-slate-600 hover:bg-orange-950'>
           <button className='button'>Post Role</button>
          </Link>
          </div>

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="bg-gray-800 py-4">
+    <nav className="fixed w-full bg-zinc-300 py-4">
       <div className="container mx-auto flex justify-between items-center rounded-lg">
         <div className="text-white font-bold text-xl">
-          <Link to="/">My App</Link>
+          <Link to="/">Crabs</Link>
         </div>
         <ul className="flex space-x-4 text-white">
           <li>
