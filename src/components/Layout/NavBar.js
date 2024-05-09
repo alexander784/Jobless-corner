@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import Login from './Login';
 
 const NavBar = () => {
   return (
@@ -11,7 +12,7 @@ const NavBar = () => {
         <ul className="flex space-x-4 text-white">
           <div className='rounded 3xl bg-slate-800'>
           <li>
-            <Link to="/" className="hover:text-gray-400">
+            <Link to="/Login" className="hover:text-gray-400">
               Login
             </Link>
           </li>

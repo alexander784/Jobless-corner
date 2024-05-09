@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Search from "./components/Layout/Search";
+import Login from "./components/Layout/Login";
 
 
 
@@ -18,6 +19,8 @@ function App() {
 
     <Routes>
       <Route path='/' element={ <Home />} />
+      <Route path='/Login' element={ <Login />} />
+
 
 
       
