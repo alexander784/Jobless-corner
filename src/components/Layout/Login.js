@@ -1,6 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        navigate('/home');
+    }
+
+
   return (
         <div>
             <section class="bg-gray-50 dark:bg-gray-900">
