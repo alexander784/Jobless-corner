@@ -25,7 +25,7 @@ const Home = () => {
          </div>
          </div>
          <section class="container mx-auto px-6 p-10">
-      <h2 class="text-4xl font-bold text-center text-white mb-8">
+       <h2 class="text-4xl font-bold text-center text-white mb-8">
         Our services
       </h2>
       <div class="flex items-center flex-wrap mb-20">
