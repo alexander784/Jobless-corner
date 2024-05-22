@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const PostRole = () => {
   const [roleName, setRoleName] = useState('');
   const [description, setDescription] = useState('');
   const [jobType, setJobType] = useState('');
   const [duration, setDuration] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    console.log('Role Name:', roleName);
-    console.log('Description:', description);
-    console.log('Job Type:', jobType);
-    console.log('Duration:', duration);
+    const formData = {
+      roleName,
+      description,
+      jobType,
+      duration
+    };
+    // Navigate to OpenRole component
+    navigate('/open-roles', { state: formData });
   };
 
   return (
