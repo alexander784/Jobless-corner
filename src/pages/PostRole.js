@@ -1,0 +1,88 @@
+import React, { useState } from 'react';
+
+const PostRole = () => {
+  const [roleName, setRoleName] = useState('');
+  const [description, setDescription] = useState('');
+  const [jobType, setJobType] = useState('');
+  const [duration, setDuration] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    console.log('Role Name:', roleName);
+    console.log('Description:', description);
+    console.log('Job Type:', jobType);
+    console.log('Duration:', duration);
+  };
+
+  return (
+    <div className="container mx-auto px-6 p-10">
+      <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+        Post a New Role
+      </h2>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="roleName">
+            Role Name
+          </label>
+          <input
+            type="text"
+            id="roleName"
+            value={roleName}
+            onChange={(e) => setRoleName(e.target.value)}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="description">
+            Description
+          </label>
+          <textarea
+            id="description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          ></textarea>
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="jobType">
+            Job Type
+          </label>
+          <input
+            type="text"
+            id="jobType"
+            value={jobType}
+            onChange={(e) => setJobType(e.target.value)}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="duration">
+            Duration
+          </label>
+          <input
+            type="text"
+            id="duration"
+            value={duration}
+            onChange={(e) => setDuration(e.target.value)}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div>
+        <div className="flex items-center justify-between">
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default PostRole;

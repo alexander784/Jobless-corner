@@ -7,6 +7,7 @@ import {
 import Home from './pages/Home';
 import Search from "./components/Layout/Search";
 import Login from "./components/Layout/Login";
+import PostRole from "./pages/PostRole";
 
 
 
@@ -19,6 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={ <Home />} />
       <Route path='/Login' element={ <Login />} />
+      <Route path='/PostRole' element={ <PostRole />} />
 
 
 
