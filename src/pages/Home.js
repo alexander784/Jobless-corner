@@ -13,7 +13,7 @@ const Home = () => {
           to Grow Your Team
         </p>
         <div className='absolute bottom-0'>
-          <Link to="/open-roles" className='container mx-5 rounded-3xl bg-slate-600 hover:bg-orange-950'>
+          <Link to="/Openrole" className='container mx-5 rounded-3xl bg-slate-600 hover:bg-orange-950'>
             <button className=''>Open Role</button>
           </Link>
           <Link to="/PostRole" className='container mx-5 rounded-3xl bg-slate-600 hover:bg-orange-950'>

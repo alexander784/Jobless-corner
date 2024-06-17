@@ -17,12 +17,12 @@ const PostRole = () => {
       duration
     };
     // Navigate to OpenRole component
-    navigate('/open-roles', { state: formData });
+    navigate('/Openrole', { state: formData });
   };
 
   return (
     <div className="container mx-auto px-6 p-10">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
         Post a New Role
       </h2>
       <form onSubmit={handleSubmit}>
@@ -65,11 +65,8 @@ const PostRole = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="duration">
-            Duration
-          </label>
-          <input
-            type="text"
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="duration">Duration</label>
+          <input type="text"
             id="duration"
             value={duration}
             onChange={(e) => setDuration(e.target.value)}
@@ -77,10 +74,9 @@ const PostRole = () => {
             required
           />
         </div>
-        <div className="flex items-center justify-between">
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        <div className="flex items-center justify-center">
+          <button type="submit"
+            className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
