@@ -9,14 +9,19 @@ import Search from "./components/Layout/Search";
 import Login from "./components/Layout/Login";
 import PostRole from "./pages/PostRole";
 import OpenRole from "./pages/Openrole";
+import ThemeContextProvider from "./Context/ThemeContext";
 
 
 
 function App() {
   return (
     <>
-    <Router>
-    <NavBar />
+     <Router>
+    <ThemeContextProvider>
+
+       <NavBar />
+    </ThemeContextProvider>
+
 
     <Routes>
       <Route path='/' element={ <Home />} />

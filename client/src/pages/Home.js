@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Search from '../components/Layout/Search';
 import News from '../assets/News.jpg';
 import Smart from '../assets/Smart.avif';
+import { ThemeContext } from '../Context/ThemeContext';
 
-const Home = () => {
+function Home ()  {
+  // const themeContext = useContext(ThemeContext);
+  // console.log(themeContext);
+  //  const{ isLightTheme, light, dark } = themeContext;
+
+  //  const theme = isLightTheme ? light : dark;
+
   return (
-    <div className='size-100 bg-gray-800'>
+    <div  style={{}}className='size-100 bg-gray-800'>
       <div className='flex justify-center items-center h-screen'>
         <p className='text-white text-6xl'>
           Meet the <span className='text-green-400'>Best</span> Tech <br /> Personality <br />

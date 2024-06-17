@@ -9,7 +9,7 @@ const OpenRole = ({ roles }) => {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {
-         roles.map((role, index) => (
+          roles.map((role, index) => (
           <div key={index}
             className="bg-white shadow-md rounded-lg p-6">
             <h3 className="text-lg font-semibold text-gray-800">{role.roleName}</h3>

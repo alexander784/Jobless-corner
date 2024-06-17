@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from "react-router-dom";
+import { ThemeContext } from '../../Context/ThemeContext';
 // import Login from './Login';
 
-const NavBar = () => {
+function NavBar  () {
+  const themeContext = useContext(ThemeContext);
+
+  const {isLightTheme, light, dark} = themeContext;
+
+  const theme = isLightTheme ? light : dark;
   return (
-    <nav className="fixed w-full bg-green-400 py-4">
+    <nav style={{ background:theme.ui, color:theme.syntax}}className="fixed w-full bg-green-400 py-4">
       <div className="container mx-auto flex justify-between items-center rounded-lg">
         <div className="text-white font-bold text-xl">
           <Link to="/">Ralphy Boy</Link>
