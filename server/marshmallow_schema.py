@@ -15,6 +15,8 @@ class UserSchema(ma.Schema):
 user_schema = UserSchema()
 users_schema = UserSchema(many=True)
 
+
+
 class PostroleSchema(ma.Schema):
     class Meta:
         model = Postrole
@@ -23,6 +25,11 @@ class PostroleSchema(ma.Schema):
     description = fields.Str(required=True)
     job_type = fields.Str(required=True)
     duration=fields.Str(required=True)
+
+
+Postrole_schema = PostroleSchema()
+Postroles_schema = PostroleSchema(many=True)
+
 
 class OpenroleSchema(ma.Schema):
     class Meta:
