@@ -7,7 +7,8 @@ from marshmallow_schema import PostroleSchema
 openrole_ns = Namespace('openrole', description="Namespace for openrole")
 
 openrole_model = openrole_ns.model(
-    "Postrole",
+
+    "Openrole",
     {
         "id": fields.Integer(),
         "role_name": fields.String(required=True),
